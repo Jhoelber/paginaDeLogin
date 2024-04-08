@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background-color: #DBEAFE;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    height: 100%;
+
+    overflow: hidden;
+
+
+}
+
+#hide-navigation-buttons .navigation-buttons {
+    display: none;
+}
+
+.cabecalho {
+    width: 50%;
+    position: absolute;
+}
+
+.mulherMexendoTotem {
+    margin-top: 6em;
+    margin-left: 16em;
+}
+
+.totem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+
+.login {
+
+
+    margin-left: 6em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: auto;
+    height: 200%;
+
+
+
+}
+
+.loginLogin {
+
+    margin-top: 8em;
+
+
+}
+
+.botaoLogin {
+    margin-top: .5em;
+    padding: 5px;
+    border: none;
+    background-color: #7DD3FC;
+    border-radius: 7px;
+    width: 100%;
+
+    color: #ffffff;
+    font-size: 24px;
+
+}
+
+.botaoLogin:active {
+    background-color: #369af725;
+    outline: 2px solid #369af770;
+    outline-offset: -2px;
+    border-radius: 7px;
+}
+
+
+.loginTopo {
+    margin-top: 1em;
+    font-size: 55px;
+    width: 400px;
+    text-align: center;
+}
+
+.caixa {
+
+    border: none;
+    background-color: #DBEAFE;
+
+    border-radius: 8px;
+    padding: 5px;
+    width: 100%;
+    height: 24px;
+}
+
+.caixa:focus {
+
+    outline-offset: -2px;
+    border-radius: 7px;
+
+
+}
+
+.conteudoInternoLogin {
+    font-weight: 400;
+}
+
+.ColocarSenha {
+    display: flex;
+    flex-direction: column;
+}
+
+.esqueciSenha {
+    padding-top: 1em;
+    display: flex;
+    justify-content: end;
+    font-size: 10px;
+
+}
+
+.estiloAncora {
+    font-size: 16px;
+    text-decoration: none;
+    color: #369AF7;
+}
+
+.totem_link {
+    display: flex;
+
+    justify-content: center;
+    align-self: center;
+}
+
+.texto {
+
+    text-align: center;
+    margin-left: 4em;
+    font-weight: 500;
+}
+
+.coisasVoando {
+    margin-left: 84px;
+    margin-top: 5em;
+}
+
+.titulos {
+    margin-left: 2em;
+
+    margin-top: 2em;
+    text-align: center;
+    font-size: 44px;
+    color: #334155;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.loginDados {
+    padding: 10px 0;
+    font-size: 36px;
+
+}
+
+
+
+
+.shake {
+    animation: bounce 1s infinite ease-in-out alternate  ;
+   filter: drop-shadow(12px 20px 20px #879ab5)
+}
+
+.shake2 {
+    animation: bounce 2s infinite ease-in-out alternate;
+    filter: drop-shadow(12px 20px 20px #879ab5)
+}
+
+.shake3 {
+    animation: bounce 3s infinite ease-in-out alternate !important; 
+  
+    filter: drop-shadow(12px 20px 20px #879ab5)
+}
+
+
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+        
+    }
+
+    to {
+        transform: translateY(-5px);
+      
+    }
+}
+
+

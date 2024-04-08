@@ -1,0 +1,106 @@
+body{
+    background-color: #369AF7;
+    height: 100%;
+    font-size: 44px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.cadastro{
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:2em;
+   padding: 2em;
+   box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.218)
+}
+.titulo{
+    font-weight: 400;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.nome{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 6px;
+   padding-bottom: 2em;
+}
+.sexo{
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+
+}
+.botoesSexo {
+    display: flex;
+    padding: 1em;
+}
+
+.escolhaSexo {
+    padding-left: 1em;
+}
+
+.dataNascimentoTexto {
+    padding-right: 1em;
+
+    
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-custom {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #155fff;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em; 
+    cursor: pointer;
+    
+}
+
+
+input[type="radio"]:checked + .radio-custom {
+    background-color: #369AF7;
+    
+}
+.cadastroUsuario{
+    border:1px solid  #369af770; ;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.cadastroUsuario:active{
+    background-color: #369af770;
+}
+
+
+.estiloCadastroCaixa{
+
+    border: 2px solid  #369AF7 ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   
+    border-radius: px;
+    padding: 5px;
+}
+
+.estiloCadastroCaixa:focus{
+    outline: 2px solid #369af770;
+    outline-offset: -2px; 
+    border-radius: 7px;
+    
+    
+}
+
