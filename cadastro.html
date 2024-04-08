@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estiloLogin/estiloCadastrar.css">
+    <link rel="stylesheet" href="estiloLogin/reset.css">
+    <link rel="stylesheet" href="estiloLogin/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    
+<section class="cadastro">
+
+<h1 class="titulo">Cadastro</h1>
+<div class="nome">
+    <h2>Nome</h2>
+    <input class=" estiloCadastroCaixa" type="text">
+</div>
+
+<div class="dataNascimento nome">
+    <h2 class="dataNascimentoTexto ">Data de nascimento</h2>
+    <input type="date" class="estiloCadastroCaixa">
+</div>
+
+<div class="sexo">
+    <h2 class="escolhaSexo">Sexo</h2>
+    <div class="botoesSexo">
+        <label for="masculino">
+            <input type="radio" id="masculino" name="sexo" class="escolha"> Masculino
+            <span class="radio-custom"></span>
+        </label>
+        <label for="feminino">
+            <input type="radio" id="feminino" name="sexo" class="escolha"> Feminino
+            <span class="radio-custom"></span>
+        </label>
+    </div>
+</div>
+<div class="escolherLogin nome">
+    <h2>Login</h2>
+    <input class=" estiloCadastroCaixa" type="text">
+</div>
+
+<div class="escolherSenha nome">
+    <h2>Senha</h2>
+    <input class=" estiloCadastroCaixa" type="password">
+</div>
+
+<div class="confirmarSenha nome">
+    <h2>Confirmar Senha</h2>
+    <input  class="estiloCadastroCaixa" type="password">
+</div>
+
+<input type="button" value="Cadastrar" class="cadastroUsuario">
+
+</section>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

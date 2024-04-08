@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+    <link rel="stylesheet" href="estiloLogin/reset.css">
+    <link rel="stylesheet" href="estiloLogin/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="images/logo_prefeitura_.png" alt="Logo prefeitura de jacarezinho">
+    </header>
+
+    <div id="navigation-container" class="navigation-buttons"></div>
+    <div class="totem">
+        <div class="totem_link">
+            <div>
+
+                <div class="titulos">
+                    <h1>
+                        Totem de autoatendimento
+                    </h1>
+                    <h2>
+                        Sala do empreendedor
+                    </h2>
+                </div>
+                <img src="images/totem.png" class="mulherMexendoTotem "
+                    alt="mulher tocando em um totem de auto atendimento" style="width: 400px;">
+
+
+
+            </div>
+
+            <div class="coisasVoando">
+                <div class="shakeshake">
+                    <img src="images/imprimir1.png" alt="" style="width: 120px;" class="shake ">
+                </div>
+                <div class="shakeshake1">
+                    <img src="images/imprimir2.png" alt="" style="width: 120px;" class="shake3 img2">
+                </div>
+                <div class="shakeshake2">
+                    <img src="images/imprimir3.png" alt="" style="width: 120px;" class="shake2 img3">
+                </div>
+                <div class="shakeshake3">
+                    <img src="images/imprimir4.png" alt="" style="width: 120px;" class="shake3 img4">
+                </div>
+                <div class="shakeshake4">
+                    <img src="images/imprimir5.png" alt="" style="width: 120px;" class="shake img5">
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="login">
+            <div>
+                <h2 class="loginTopo">Bem-vindo ao
+                    Toti</h2>
+            </div>
+            <div class="loginLogin">
+                <div class="conteudoInternoLogin">
+
+                    <form id="loginForm">
+                        <h2 class="loginDados" for="username">Telefone</h2>
+                        <input type="text" class="caixa" id="username" name="username">
+                </div>
+
+                <div class="conteudoInternoLogin">
+
+                    <div class="ColocarSenha">
+                        <label for="passwordDados password" class="loginDados">Senha</label>
+                        <input type="password" class="caixa" aria-colcount="" id="passwordDados" name="password">
+                    </div>
+
+                    <input type="submit" value="Login" class="botaoLogin">
+                    </form>
+
+                    <h3 class="esqueciSenha"><a class="estiloAncora" href="#" id="externalLink"> Esqueci minha senha</a>
+                    </h3>
+
+                    <div id="loginError" style="display:none; color:red;">Usuário ou senha incorretos.</div>
+
+                </div>
+
+                <h3>Ainda nao possui conta? clique em <a class="estiloAncora" href="cadastro.html">cadastrar</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Login -->
+    <div id="login" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="scriptLogin.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "Totem de auto atendimento",
+  "main": "main.js",
+  "homepage": "../electron/login.html",
+  "shortcuts": [
+    {
+      "type": "shortcut",
+      "target": "../electron/dist/Totem Setup 1.0.0.exe",
+      "title": "Totem"
+    }
+  ],
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "set DEBUG=electron-builder && electron-builder",
+    "dev": "electron .",
+    "electron:package:linux": "electron-builder -l -c.extraMetadata.main-build/main.js",
+    "electron:package:win": "electron-builder -w -c.extraMetadata.main-build/main.js",
+    "enableCrashReporter": "true",
+    "build": "electron-builder",
+    "debug": "electron --inspect=5858 ."
+  
+  },
+  "keywords": [],
+  "author": "jhoelber",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.1.0",
+    "electron-builder": "^24.9.1",
+    "electron-reloader": "^1.2.3"
+  },
+  "build": {
+    "appId": "com.br.totem.electron",
+    "productName": "Totem",
+    "icon": "../images/LogoIcon.png",
+    "files": [
+      "main.js",
+     "login.js",
+     "login.html",
+     "cadastro.html",
+      "index.html",
+     "estiloLogin/**/*",
+      "estilo/**/*",
+      "images/**/*"
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+   
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "chrome": "^0.1.0",
+    "electron-dl": "^3.5.2",
+    "electron-is-dev": "^2.0.0",
+    "electron-localshortcut": "^3.2.1",
+    "electron-modal": "^1.0.0",
+    "electron-online": "^1.0.0",
+    "electron-pdf-window": "^1.0.12",
+    "electron-virtual-keyboard": "^1.0.7",
+    "is-online": "^4.0.2",
+    "open": "^10.0.3",
+    "pdf-poppler": "^0.2.1",
+    "pdf-to-img": "^2.1.2",
+    "pdf2pic": "^3.1.1",
+    "pdfjs-dist": "^2.16.105"
+  }
+}
